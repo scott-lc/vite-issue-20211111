@@ -1,0 +1,13 @@
+/* A separate CSS file to show that the issue is because of the postcss-import (@import). */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+  /* These are valid tailwind styles - work fine */
+  @apply bg-blue-500 p-8  text-white text-xl text-center;
+
+  /* This line causes the kaboom! */
+  @apply foobar;
+}
