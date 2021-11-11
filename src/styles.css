@@ -1,4 +1,6 @@
-/* A separate CSS file to show that the issue is because of the postcss-import (@import). */
+/* 
+  A separate CSS file to show that the location of the actual error issue is different that what is reported to `formatError`
+*/
 
 @tailwind base;
 @tailwind components;
@@ -8,6 +10,6 @@
   /* These are valid tailwind styles - work fine */
   @apply bg-blue-500 p-8  text-white text-xl text-center;
 
-  /* This line causes the kaboom! */
+  /* This line causes the kaboom! It is the actual location of the error */
   @apply foobar;
 }
