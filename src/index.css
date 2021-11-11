@@ -1,1 +1,6 @@
+/* 
+  Import a file (via the postcss/postcss-import plugin).  The underlying issue is that the actual source
+  of the error (./styles.css line #14) is different that where Vite thinks it is (index.css line #4)
+*/
+
 @import './styles.css';
